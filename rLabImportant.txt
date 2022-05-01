@@ -1,0 +1,146 @@
+Package Installation steps
+install.packages("ggplot2")
+library("ggplot")
+
+#set directory
+
+setwd("/path")
+
+var = read.csv("filename.csv") --------=> if csv file is given
+
+view(var)
+
+------------------------------------------------------
+define x
+defione y
+print(x)
+arithmatic fun on x,y
+
+help(sqrt)
+help.search("squareroot")
+find("squareroot")
+rm(x) #remove
+cat("kartik = ",y)
+
+class(y)
+
+
+############## EXP2
+
+define x y
+max(x)
+min(x)
+round()
+sum()
+prod()
+a <- matrix(c(1:10),nrow=5,ncol=2)
+
+b = matrix(c(1:10),nrow=5,ncol=2,byrow=TRUE)
+
+c = diag(1,nrow=3,ncol=2)
+
+z = list(23,34,56,"famt",T,c(1:5))
+
+y = list(name="Rani",age=23,height=5765)
+y$name
+y$age
+
+f = data.frame(role=c(1:5),name=c("a","b","c","d","e"))
+f$name
+f$role
+
+subset(f.role<=3)
+
+z = factor(y,levels=c(1:7),labels=c("Monday"......."Sunday"))
+
+mode(z)
+class(z)
+
+################### EXPT 3
+
+x = readline("input = ")
+y = ifelse(x>3,55,100)  
+switch(x,Case1,Case2,Case3)
+seq(1,10,2)
+
+
+if(x>4)
+{
+		print(x)
+	}
+
+for(i in 1:10)
+{
+		print(x)
+	}
+
+while(x>4)
+	{
+		print(x)
+	}
+
+
+
+
+
+
+
+
+
+######### exp4
+range(var$parameter)
+mean(var$parameter)
+max(var$parameter)
+summary(var$parameter)
+
+barplot(var$parameter)
+hist(var$parameter)
+boxplot(var$parameter)
+scatter.smooth(var$parameter)
+quantile(var$parameter)
+
+
+###########exp5
+define x
+define y
+
+x <- c(1,2,3,4,5,6)
+> y <- c(99,76,43,67,12,45)
+> plot(x)
+> plot(y)
+> plot(x,y)
+> plot(x,y,"p")
+> plot(x,y,"l")
+> plot(x,y,"b")
+> plot(x,y,"o")
+> plot(x,y,"h")
+> plot(x,y,"s")
+> pie(x,y)
+> barplot(x,y)
+> pairs(cbind(x,y))
+> pairs(rbind(x,y))
+
+##########exp6
+
+head(diamond,3)
+tail(diamond,3)
+summary(diamond)
+table(diamonds$carat)
+boxplot
+barplot(table(diamonds$carat))
+hist(diamonds$carat)
+
+library(ggplot2)
+ggplot(data,aes(x=Age,y=Education))+geom_point()
+ggplot(data,aes(x=Age,y=Education))+geom_smooth()
+ggplot(data,aes(x=Age,y=Education))+geom_boxplot()
+
+########### exp7
+
+plot(data$Age,data$Education)
+> cor(x,y)
+> boxplot(log(data$Age))
+> data$Parameter
+> cor(data$Age,data$Education)
+> data = split(log(data$Age),data$Education)
+
